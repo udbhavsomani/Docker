@@ -7,5 +7,5 @@
     - Go to http://localhost:8080
 
 ### Routes
-- > /
-- > /bye
+- > [/](http://localhost:8080)
+- > [/bye](http://localhost:8080/bye)
