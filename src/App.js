@@ -6,14 +6,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <h1>
-          This is testing. 'testing docker-compose'
+          This App is in production. 🚀
         </h1>
         <p>
-          Docker Compose works.
+          Changes made through the feature branch.
         </p>
         <a
           className="App-link"
