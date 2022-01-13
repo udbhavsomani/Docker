@@ -1,6 +1,6 @@
+sudo: required
 language: generic
 
-sudo: required
 services:
   - docker
 
@@ -11,12 +11,12 @@ script:
   - docker run -e CI=true udbhav/docker-react npm run test
 
 deploy:
-  provide: elasticbeanstalk
-  region: "us-east-1"
-  app: "docker"
-  env: "Docker-env"
-  bucket_name: "elasticbeanstalk-us-east-1-650941031585"
-  bucket_path: "docker"
+  provider: elasticbeanstalk
+  region: 'us-east-1'
+  app: 'docker'
+  env: 'Docker-env'
+  bucket_name: 'elasticbeanstalk-us-east-1-650941031585'
+  bucket_path: 'docker'
   on:
     branch: travis
   access_key_id: $AWS_ACCESS_KEY
