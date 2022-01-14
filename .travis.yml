@@ -11,14 +11,15 @@ script:
   - docker run -e CI=true udbhav/react-test npm run test
 
 after_success:
-  - docker build -t udbhav/prod-client ./client
-  - docker build -t udbhav/prod-worker ./worker
-  - docker push udbhav/prod-server ./server
-  - docker build -t udbhav/prod-nginx ./nginx
+  # name = "<docker username>/<docker image name>" else push is not allowed
+  - docker build -t udbhavsomani/prod-client ./client
+  - docker build -t udbhavsomani/prod-worker ./worker
+  - docker build -t udbhavsomani/prod-server ./server
+  - docker build -t udbhavsomani/prod-nginx ./nginx
   # Log in to the Docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Push the images to Docker Hub
-  - docker push udbhav/prod-client
-  - docker push udbhav/prod-worker
-  - docker push udbhav/prod-server
-  - docker push udbhav/prod-nginx
+  - docker push udbhavsomani/prod-client
+  - docker push udbhavsomani/prod-worker
+  - docker push udbhavsomani/prod-server
+  - docker push udbhavsomani/prod-nginx
