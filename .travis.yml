@@ -23,3 +23,15 @@ after_success:
   - docker push udbhavsomani/prod-worker
   - docker push udbhavsomani/prod-server
   - docker push udbhavsomani/prod-nginx
+
+deploy:
+  provider: elasticbeanstalk
+  region: 'us-east-1'
+  app: 'multi-container-docker'
+  env: 'Multicontainerdocker-env'
+  bucket_name: 'elasticbeanstalk-us-east-1-650941031585'
+  bucket_path: 'multi-container-docker'
+  on:
+    branch: complex-prod
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
