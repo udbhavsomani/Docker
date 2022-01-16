@@ -12,5 +12,5 @@ docker push udbhavsomani/prod-worker:$SHA
 
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=udbhavsomani/prod-server:$SHA
-kubectl set image deployments/client-deployment client=udbhavsomani/prod-cient:$SHA
+kubectl set image deployments/client-deployment client=udbhavsomani/prod-client:$SHA
 kubectl set image deployments/worker-deployment worker=udbhavsomani/prod-worker:$SHA
