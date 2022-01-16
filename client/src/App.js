@@ -9,19 +9,13 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Fib Calculator - Kubernetes - Version 2
-          </a>
-          <Link to="/">Home</Link>
-          <Link to="/otherpage">Other Page</Link>
-        </header>
+
+        Fib Calculator - Kubernetes - Version 2.0
+        
+        <br />
+        <Link to="/">Home</Link>
+        <br />
+        <Link to="/otherpage">Other Page</Link>
         <div>
           <Route exact path="/" component={Fib} />
           <Route path="/otherpage" component={OtherPage} />
