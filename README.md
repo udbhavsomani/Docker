@@ -13,6 +13,9 @@
     > <hr>
     - [Automatic Testing and Deployement with Travis and AWS](https://github.com/udbhavsomani/Docker/tree/travis)
         > travis branch
+    > <hr>
+    - [Testing PR Merge on production](https://github.com/udbhavsomani/Docker/tree/feature)
+        > feature branch
 
 5. [Complex App - Fibonacci counter [React / Redis / PostgeSQL]](https://github.com/udbhavsomani/Docker/tree/master/complex)
     > <hr>
@@ -24,3 +27,7 @@
     > <hr>
     - [Automatic Testing and Deployment with Travis and Google Kubernetes Engine](https://github.com/udbhavsomani/Docker/tree/complex-k8s-prod)
         > complex-k8s-prod branch
+    > <hr>
+    - [Testing PR Merge on Kubernetes production](https://github.com/udbhavsomani/Docker/tree/complex-k8s-feature)
+        > complex-k8s-feature branch
+    
