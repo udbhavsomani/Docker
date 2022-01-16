@@ -9,16 +9,15 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
-      <div>
         Fib Calculator - Kubernetes - Version 2
-      </div>
-      <Link to="/">Home</Link>
-      <Link to="/otherpage">Other Page</Link>
-      <div>
-        <Route exact path="/" component={Fib} />
-        <Route path="/otherpage" component={OtherPage} />
+        <br />
+        <Link to="/">Home</Link>
+        <br />
+        <Link to="/otherpage">Other Page</Link>
+        <div>
+          <Route exact path="/" component={Fib} />
+          <Route path="/otherpage" component={OtherPage} />
+        </div>
       </div>
     </Router>
   );
