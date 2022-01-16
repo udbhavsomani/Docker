@@ -2,13 +2,22 @@
 
 ## Setup
 - To start the application run:
-    - `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.0/deploy/static/provider/cloud/deploy.yaml`
-    - `kubectl apply -f k8s`
+    ```
+    kubectl create secret generic pgpassword --from-literal PGPASSWORD=<YOUR_PASSWORD>
+    ```
+    ```
+    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.0/deploy/static/provider/cloud/deploy.yaml
+    ```
+    ```
+    kubectl apply -f k8s
+    ```
 
 - Then go to http://localhost
 
 ## Cleanup
-- `kubectl delete all --all --all-namespaces`
+```
+kubectl delete all --all --all-namespaces
+```
 
 ### Resources
 - https://kubernetes.io/docs/concepts/services-networking/ingress/
