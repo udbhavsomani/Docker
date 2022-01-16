@@ -10,3 +10,5 @@
 ### Resources
 - https://kubernetes.io/docs/concepts/services-networking/ingress/
 - https://kubernetes.github.io/ingress-nginx/
+<hr>
+<img width="652" alt="image" src="https://user-images.githubusercontent.com/55579405/149643084-2d156ad6-44c5-4f78-a291-07bdbfede26d.png">
