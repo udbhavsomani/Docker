@@ -7,6 +7,9 @@
 
 - Then go to http://localhost
 
+## Cleanup
+- `kubectl delete all --all --all-namespaces`
+
 ### Resources
 - https://kubernetes.io/docs/concepts/services-networking/ingress/
 - https://kubernetes.github.io/ingress-nginx/
