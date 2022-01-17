@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: complex-k8s-com-tls
+spec:
+  secretName: complex-k8s-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: complex-k8s.somani18.ml
+  dnsNames:
+    - complex-k8s.somani18.ml
